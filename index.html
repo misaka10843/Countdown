@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <!--Tailwindcss-->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* ! tailwindcss v3.1.1 | MIT License | https://tailwindcss.com */
+    *,
+    ::after,
+    ::before {
+      box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      border-color: #e5e7eb
+    }
+
+    ::after,
+    ::before {
+      --tw-content: ''
+    }
+
+    html {
+      line-height: 1.5;
+      -webkit-text-size-adjust: 100%;
+      -moz-tab-size: 4;
+      tab-size: 4;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+    }
+
+    body {
+      margin: 0;
+      line-height: inherit
+    }
+
+    hr {
+      height: 0;
+      color: inherit;
+      border-top-width: 1px
+    }
+
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+      text-decoration: underline dotted
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-size: inherit;
+      font-weight: inherit
+    }
+
+    a {
+      color: inherit;
+      text-decoration: inherit
+    }
+
+    b,
+    strong {
+      font-weight: bolder
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 1em
+    }
+
+    small {
+      font-size: 80%
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline
+    }
+
+    sub {
+      bottom: -.25em
+    }
+
+    sup {
+      top: -.5em
+    }
+
+    table {
+      text-indent: 0;
+      border-color: inherit;
+      border-collapse: collapse
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      font-size: 100%;
+      font-weight: inherit;
+      line-height: inherit;
+      color: inherit;
+      margin: 0;
+      padding: 0
+    }
+
+    button,
+    select {
+      text-transform: none
+    }
+
+    [type=button],
+    [type=reset],
+    [type=submit],
+    button {
+      -webkit-appearance: button;
+      background-color: transparent;
+      background-image: none
+    }
+
+    :-moz-focusring {
+      outline: auto
+    }
+
+    :-moz-ui-invalid {
+      box-shadow: none
+    }
+
+    progress {
+      vertical-align: baseline
+    }
+
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto
+    }
+
+    [type=search] {
+      -webkit-appearance: textfield;
+      outline-offset: -2px
+    }
+
+    ::-webkit-search-decoration {
+      -webkit-appearance: none
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      font: inherit
+    }
+
+    summary {
+      display: list-item
+    }
+
+    blockquote,
+    dd,
+    dl,
+    figure,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    hr,
+    p,
+    pre {
+      margin: 0
+    }
+
+    fieldset {
+      margin: 0;
+      padding: 0
+    }
+
+    legend {
+      padding: 0
+    }
+
+    menu,
+    ol,
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0
+    }
+
+    textarea {
+      resize: vertical
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      opacity: 1;
+      color: #9ca3af
+    }
+
+    [role=button],
+    button {
+      cursor: pointer
+    }
+
+    :disabled {
+      cursor: default
+    }
+
+    audio,
+    canvas,
+    embed,
+    iframe,
+    img,
+    object,
+    svg,
+    video {
+      display: block;
+      vertical-align: middle
+    }
+
+    img,
+    video {
+      max-width: 100%;
+      height: auto
+    }
+
+    *,
+    ::before,
+    ::after {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia:
+    }
+
+    ::-webkit-backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia:
+    }
+
+    ::backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x: ;
+      --tw-pan-y: ;
+      --tw-pinch-zoom: ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-ordinal: ;
+      --tw-slashed-zero: ;
+      --tw-numeric-figure: ;
+      --tw-numeric-spacing: ;
+      --tw-numeric-fraction: ;
+      --tw-ring-inset: ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur: ;
+      --tw-brightness: ;
+      --tw-contrast: ;
+      --tw-grayscale: ;
+      --tw-hue-rotate: ;
+      --tw-invert: ;
+      --tw-saturate: ;
+      --tw-sepia: ;
+      --tw-drop-shadow: ;
+      --tw-backdrop-blur: ;
+      --tw-backdrop-brightness: ;
+      --tw-backdrop-contrast: ;
+      --tw-backdrop-grayscale: ;
+      --tw-backdrop-hue-rotate: ;
+      --tw-backdrop-invert: ;
+      --tw-backdrop-opacity: ;
+      --tw-backdrop-saturate: ;
+      --tw-backdrop-sepia:
+    }
+
+    .absolute {
+      position: absolute
+    }
+
+    .relative {
+      position: relative
+    }
+
+    .left-\[255px\] {
+      left: 255px
+    }
+
+    .top-\[207px\] {
+      top: 207px
+    }
+
+    .left-\[909\.5px\] {
+      left: 909.5px
+    }
+
+    .top-\[102\.5px\] {
+      top: 102.5px
+    }
+
+    .left-\[554\.5px\] {
+      left: 554.5px
+    }
+
+    .top-\[404\.5px\] {
+      top: 404.5px
+    }
+
+    .left-\[558\.5px\] {
+      left: 558.5px
+    }
+
+    .top-\[410\.5px\] {
+      top: 410.5px
+    }
+
+    .left-\[867px\] {
+      left: 867px
+    }
+
+    .top-\[586px\] {
+      top: 586px
+    }
+
+    .left-\[702px\] {
+      left: 702px
+    }
+
+    .top-\[647px\] {
+      top: 647px
+    }
+
+    .left-\[619px\] {
+      left: 619px
+    }
+
+    .top-\[332px\] {
+      top: 332px
+    }
+
+    .left-\[1281px\] {
+      left: 1281px
+    }
+
+    .left-\[1296px\] {
+      left: 1296px
+    }
+
+    .left-\[1309px\] {
+      left: 1309px
+    }
+
+    .left-\[-0\.5px\] {
+      left: -0.5px
+    }
+
+    .top-\[786\.5px\] {
+      top: 786.5px
+    }
+
+    .h-\[800px\] {
+      height: 800px
+    }
+
+    .h-\[697px\] {
+      height: 697px
+    }
+
+    .h-\[100px\] {
+      height: 100px
+    }
+
+    .h-\[41px\] {
+      height: 41px
+    }
+
+    .h-\[30px\] {
+      height: 30px
+    }
+
+    .h-12 {
+      height: 3rem
+    }
+
+    .h-\[13px\] {
+      height: 13px
+    }
+
+    .w-\[1920px\] {
+      width: 1920px
+    }
+
+    .w-\[100px\] {
+      width: 100px
+    }
+
+    .w-\[811px\] {
+      width: 811px
+    }
+
+    .w-\[803px\] {
+      width: 803px
+    }
+
+    .w-10 {
+      width: 2.5rem
+    }
+
+    .w-\[1589px\] {
+      width: 1589px
+    }
+
+    .overflow-hidden {
+      overflow: hidden
+    }
+
+    .rounded-tr-sm {
+      border-top-right-radius: 0.125rem
+    }
+
+    .rounded-br-sm {
+      border-bottom-right-radius: 0.125rem
+    }
+
+    .border {
+      border-width: 1px
+    }
+
+    .border-white {
+      --tw-border-opacity: 1;
+      border-color: rgb(255 255 255 / var(--tw-border-opacity))
+    }
+
+    .bg-\[\#d9d9d9\] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(217 217 217 / var(--tw-bg-opacity))
+    }
+
+    .bg-white {
+      --tw-bg-opacity: 1;
+      background-color: rgb(255 255 255 / var(--tw-bg-opacity))
+    }
+
+    .bg-black {
+      --tw-bg-opacity: 1;
+      background-color: rgb(0 0 0 / var(--tw-bg-opacity))
+    }
+
+    .bg-\[\#c6c6c6\] {
+      --tw-bg-opacity: 1;
+      background-color: rgb(198 198 198 / var(--tw-bg-opacity))
+    }
+
+    .text-left {
+      text-align: left
+    }
+
+    .text-\[320px\] {
+      font-size: 320px
+    }
+
+    .text-4xl {
+      font-size: 2.25rem;
+      line-height: 2.5rem
+    }
+
+    .text-\[28px\] {
+      font-size: 28px
+    }
+
+    .text-\[42px\] {
+      font-size: 42px
+    }
+
+    .text-\[40px\] {
+      font-size: 40px
+    }
+
+    .font-bold {
+      font-weight: 700
+    }
+
+    .text-\[\#7f7f7f\] {
+      --tw-text-opacity: 1;
+      color: rgb(127 127 127 / var(--tw-text-opacity))
+    }
+
+    .text-white {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity))
+    }
+  </style>
+  <style>
+    html,
+    body {
+      display: flex;
+      flex: 1;
+      width: 100%;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      background-position: 0px -1px;
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='%23f1f5f9'%3e%3cpath d='M0 .5H31.5V32'/%3e%3c/svg%3e")
+    }
+
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js">
+  </script>
+  <!--Main Script-->
+  <script>
+    var isplay = 0;
+    window.onload = function () {
+      var go_time = new Date("2022/06/11 11:33:00");
+      //  countdown：倒计时
+      function countdown() {
+        var now_time = new Date();
+        var alltime = go_time.getTime() - now_time.getTime(); //总的时间（毫秒）
+        var scend = parseInt((alltime / 1000) % 60); //秒
+        //console.log(scend);
+        var minute = parseInt((alltime / 1000 / 60) % 60); //  分钟
+        // console.log(minute);
+        var hour = parseInt((alltime / 1000 / 60 / 60) % 24); //小时
+        if (hour < 0 && minute < 3 && scend < 0) {
+          go_time = new Date("");
+        }
+        if (hour == 0 && minute == 2 && scend == 57) {
+          var audio = document.getElementById('myPlay');
+          audio.currentTime = 0; //播放音频的起始时间
+          audio.volume = 1; //音频声音大小
+          audio.muted = false; //关闭静音状态
+          console.log("play")
+        }
+        if (hour == 0 && minute == 3 && scend == 0) {
+          class_1();
+          console.log("1")
+        }
+        if (hour == 0 && minute == 2 && scend == 0) {
+          class_2();
+          console.log("2")
+
+        }
+        if (hour == 0 && minute == 1 && scend == 59) {
+          class_2e();
+          console.log("2e")
+
+        }
+
+        if (hour == 0 && minute == 0 && scend == 49) {
+          class_3()
+          console.log("3")
+        }
+        if (scend < 10) {
+          scend = "0" + scend;
+        }
+        if (minute < 10) {
+          minute = "0" + minute;
+        }
+        if (hour < 10) {
+          hour = "0" + hour;
+        }
+
+        var time1 = document.getElementById("time");
+        time1.innerHTML = hour + ":" + minute + ":" + scend;
+        if (scend < 0) {
+          return;
+        } else {
+          setTimeout(countdown, 1); //不加括号
+        }
+      }
+      countdown();
+    }
+
+    function playmusic() {
+      if (isplay == 0) {
+        var audio = document.getElementById('myPlay');
+        audio.currentTime = 0; //播放音频的起始时间
+        audio.volume = 1; //音频声音大小
+        audio.muted = true; //关闭静音状态
+        console.log("will play")
+        $("#playmusic").removeClass("playmusic");
+        $("#playmusic").addClass("playmusic_1");
+        isplay = 1;
+      }
+    }
+  </script>
+  <!--Class Add/Remove-->
+  <script>
+    function class_1() {
+      $("#block_loading").addClass("block_loading_ani");
+      $("#center_loading").addClass("center_loading_ani");
+      $("#block_load").addClass("block_load");
+    }
+
+    function class_2() {
+      $("#block_load").removeClass("block_load");
+      $("#block_load").addClass("block_load_1");
+      $("#time_block").addClass("secne_to_1");
+    }
+
+    function class_2e() {
+      $("#block_loading").removeClass("block_loading_ani");
+      $("#block_loading").addClass("block_loading_ani_1");
+      $("#center_load_block").removeClass("center_load_block");
+      $("#Section_text").removeClass("Section_text");
+      $("#Section").removeClass("Section");
+      $("#center_loading").removeClass("center_loading");
+      $("#title_sub").removeClass("title_sub");
+      $("#title").removeClass("title");
+      $("#title").addClass("Main_color_1");
+      $("#center_load_block").addClass("center_load_block_1");
+      $("#Section_text").addClass("Main_color_1");
+      $("#Section").addClass("Main_color_1");
+      $("#center_loading").addClass("center_loading_1");
+      $("#title_sub").addClass("Main_color_1");
+      $("#body").removeClass("body");
+      $("#body").addClass("body_1");
+    }
+
+    function class_3() {
+      $("#block_loading").removeClass("block_loading_ani_1");
+      $("#block_loading").addClass("block_loading_ani_2");
+      $("#center_load_block").removeClass("center_load_block_1");
+      $("#center_loading").removeClass("center_loading_1");
+      $("#center_load_block").addClass("center_load_block_2");
+      $("#center_loading").addClass("center_loading_2");
+      $("#block_load").removeClass("block_load_1");
+      $("#block_load").addClass("block_load_2");
+      $("#body").removeClass("body_1");
+      $("#body").addClass("body_2");
+    }
+  </script>
+  <!--Main Css-->
+  <style>
+    #time {
+      color: #7f7f7f;
+    }
+
+    #center_loading {
+      width: 0px;
+    }
+
+    .Section_text,
+    .Section,
+    .title,
+    .title_sub {
+      color: #fff;
+    }
+
+    .center_loading {
+      background: #fff;
+    }
+
+    .center_load_block {
+      border-color: #fff;
+    }
+
+    .playmusic {
+      background: #3a3a3a;
+    }
+
+    .playmusic_1 {
+      background: #d9d9d9;
+    }
+
+    .body {
+      background: linear-gradient(to top, #1b1b1b 5.56%, #222 50.31%, #222 100.15%);
+    }
+
+    .body_1 {
+      background: linear-gradient(to top, #b3b3b3 5.56%, #e5e5e5 50.31%, #e5e5e5 100.15%);
+    }
+
+    .body_2 {
+      background-image: url("./592.jpg");
+      background-size: cover;
+    }
+
+    .block_load {
+      background-color: #000;
+    }
+
+    .block_load {
+      background-color: #000;
+    }
+
+    .block_load_1 {
+      background-color: #fff;
+    }
+
+    .block_load_2 {
+      background-color: #fff;
+    }
+
+    .block_loading_ani {
+      animation: qwq 60s;
+      animation-timing-function: linear;
+      background-color: #c6c6c6;
+    }
+
+    .block_loading_ani_1 {
+      animation: qwq1 71s;
+      animation-timing-function: linear;
+      background-color: #000;
+    }
+
+    .block_loading_ani_2 {
+      animation: qwq2 49s;
+      animation-timing-function: linear;
+      background-color: #44afaf;
+    }
+
+    .center_loading_ani {
+      animation: qwq3 180s;
+      animation-timing-function: linear;
+    }
+
+    .center_loading_1 {
+      background: #000;
+    }
+
+    .center_loading_2 {
+      background: #44afaf;
+    }
+
+    .center_load_block_1 {
+      border-color: #000;
+    }
+
+    .center_load_block_2 {
+      border-color: #44afaf;
+    }
+
+    .Main_color_1 {
+      color: #000;
+    }
+  </style>
+  <!--animation-->
+  <style>
+    @keyframes qwq {
+      0% {
+        width: 0%;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    @keyframes qwq1 {
+      0% {
+        width: 0%;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    @keyframes qwq2 {
+      0% {
+        width: 0%;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+
+    @keyframes qwq3 {
+      0% {
+        width: 0px;
+      }
+
+      100% {
+        width: 803px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <audio src="./1.mp3" muted autoplay id="myPlay" style="display: none">
+  </audio>
+  <div id="body" class="body" style="width: 1920px; height: 800px; position: relative; overflow: hidden;">
+
+    <div style="width: 1920px; height: 697px;">
+      <p id="time"
+        style="position: absolute; left: 255px; top: 207px; font-size: 320px; font-weight: 700; text-align: left;">
+        02:10:39
+      </p>
+      <div style="width: 100px; height: 100px; position: absolute; left: 909.5px; top: 102.5px; background: #d9d9d9;">
+      </div>
+      <div id="center_load_block" class="center_load_block"
+        style="width: 811px; height: 41px; position: absolute; left: 554.5px; top: 404.5px; border-width: 1px;">
+      </div>
+      <div id="center_loading" class="center_loading"
+        style=" height: 30px; position: absolute; left: 558.5px; top: 410.5px;"></div>
+      <p id="Section" class="Section"
+        style="position: absolute; left: 867px; top: 586px; font-size: 36px; font-weight: 700; text-align: left;">
+        Section:01
+      </p>
+      <p id="Section_text" class="Section_text"
+        style="position: absolute; left: 702px; top: 647px; font-size: 28px; text-align: left;">
+        ⌈VOMS. project⌋を展開Lています... (1/3)
+      </p>
+      <p id="title" class="title"
+        style="position: absolute; left: 619px; top: 332px; font-size: 42px; font-weight: 700; text-align: left;">
+        ⌈VOMS.project⌋を展開Lています
+      </p>
+      <div id="title_sub" class="title_sub" style="width: 40px; height: 48px;">
+        <p style="position: absolute; left: 1281px; top: 332px; font-size: 40px; font-weight: 700; text-align: left;">
+          .
+        </p>
+        <p style="position: absolute; left: 1296px; top: 332px; font-size: 40px; font-weight: 700; text-align: left;">
+          .
+        </p>
+        <p style="position: absolute; left: 1309px; top: 332px; font-size: 40px; font-weight: 700; text-align: left;">
+          .
+        </p>
+      </div>
+      <div style="width: 1920px; height: 13px;">
+        <div id="block_load" class="block_load"
+          style="width: 1920px; height: 13px; position: absolute; left: -0.5px; top: 786.5px;">
+        </div>
+        <div id="block_loading"
+          style="width: 0px; height: 13px; position: absolute; left: -0.5px; top: 786.5px; border-top-right-radius: 2px; border-bottom-right-radius: 2px;">
+        </div>
+      </div>
+      <div style="width: 50px; height: 50px;" onclick="playmusic()">
+        <div onclick="playmusic()" id="playmusic" class="playmusic"
+          style="width: 50px; height: 50px; position: absolute; left: 1832.5px; top: 23.5px; border-radius: 10px; ">
+        </div>
+      </div>
+      <p onclick="playmusic()"
+        style="position: absolute; left: 1845px; top: 34px; font-size: 20px; font-weight: 300; text-align: left; color: #000;">
+        🎶
+      </p>
+    </div>
+  </div>
+</body>
+
+</html>
